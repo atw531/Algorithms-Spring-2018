@@ -1,0 +1,4 @@
+This project is used to sign and verify files using the RSA algorithm.
+
+run rsa435 to generate keys. Results stored in p_q.txt, e_n.txt, and d_n.txt
+Generating keys may take up to 8 minutes, so be patient

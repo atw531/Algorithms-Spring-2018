@@ -1,0 +1,22 @@
+This project is used to sign and verify files using the RSA algorithm.
+
+run rsa435 with the proper arguments:
+	First argument values may be "s" or "v"
+		"s" is used to sign a file
+		"v" is used to verify a file
+	Second argument is the original file name with extension
+	
+	Signing example:
+		rsa.exe s File.txt
+		- This will sign the provided file, "File.txt", storing the
+			signature in the file "File.txt.signature".
+		- You will be prompted to either generate new keys or use existing keys
+		- Enter "Y" to generate a new set of keys and "N" to use existing keys
+		- If you choose to use existing keys, but none are found, then new keys
+			will be automatically generated
+		- Generating keys may take up to 8 minutes, so be patient
+	
+	Verify example:
+		rsa.exe v File.txt
+		- This will verify the provided file, based off of the signature in 
+			the file "File.txt.signature"
